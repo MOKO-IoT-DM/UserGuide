@@ -40,12 +40,12 @@
 
 ### Guide
 
-- **[<font size = "4">How to add a Gateway</font>](## How to add a Gateway)**
-- **[<font size = "4">Gateway information</font>](## Gateway information)**
-- **[<font size = "4">How to view scanned Bluetooth Devices</font>](## How to view scanned Bluetooth Devices)**
-- **[<font size = "4">How to connect the scanned Bluetooth Device</font>](## How to connect the scanned Bluetooth Device)**
-- **[<font size = "4">View historical data of Bluetooth Devices</font>](## View historical data of Bluetooth Devices)**
-- **[<font size = "4">Simulation demo</font>](## Simulation demo)**
+- **[How to add a Gateway](## How to add a Gateway)**
+- **[Gateway information](## Gateway information)**
+- **[How to view scanned Bluetooth Devices](## How to view scanned Bluetooth Devices)**
+- **[How to connect the scanned Bluetooth Device](## How to connect the scanned Bluetooth Device)**
+- **[View historical data of Bluetooth Devices](## View historical data of Bluetooth Devices)**
+- **[Simulation demo](## Simulation demo)**
 
 ## How to add a Gateway
 
@@ -128,3 +128,5 @@ Confirm your account is online.If your account shows as “Disconnected” after
 > The gateway will automatically download and upgrade the firmware package. After a successful upgrade, the gateway will restart and rejoin the network.
 
 ![GatewaySettingsOTA](img-folder/gateway_settings_ota.png)
+
+## How to view scanned Bluetooth Devices
