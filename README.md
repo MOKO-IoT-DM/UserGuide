@@ -8,11 +8,11 @@
 
 ***Remote Gateway***
 
-<font size = "4">`MKGW-mini 01``MK107``MK107D Pro``MK107D Pro-35D``MK110 Plus 01`</font>
+<font size = "4">`MKGW-mini 01` `MK107` `MK107D Pro` `MK107D Pro-35D` `MK110 Plus 01`</font>
 
 ***Remote Gateway with metering***
 
-<font size = "4">`MK110 Plus 02``MK110 Plus 03`</font>
+<font size = "4">`MK110 Plus 02` `MK110 Plus 03`</font>
 
 ***POE Gateway***
 
@@ -32,7 +32,7 @@
 
 ***LoRa Device***
 
-<font size = "4">`LW003-B``LW001-BG PRO(L)``LW001-BG PRO(M)``LW004-PB``LW004-CT``LW005-MP``LW007-PIR``LW008-MT`</font>
+<font size = "4">`LW003-B` `LW001-BG PRO(L)` `LW001-BG PRO(M)` `LW004-PB` `LW004-CT` `LW005-MP` `LW007-PIR` `LW008-MT`</font>
 
 > MKGW1、MKGW2 user Web to configure parameters,LoRa Device use APP `MKLoRa` ,Other gateway use APP `MKScannerPro`
 
@@ -40,14 +40,14 @@
 
 ### Guide
 
-- **[How to add a Gateway](## How to add a Gateway)**
-- **[Gateway information](## Gateway information)**
-- **[How to view scanned Bluetooth Devices](## How to view scanned Bluetooth Devices)**
-- **[How to connect the scanned Bluetooth Device](## How to connect the scanned Bluetooth Device)**
-- **[View historical data of Bluetooth Devices](## View historical data of Bluetooth Devices)**
-- **[Simulation demo](## Simulation demo)**
+- **[<font size = "4">How to add a Gateway</font>](#1)**
+- **[<font size = "4">Gateway information</font>](#2)**
+- **[<font size = "4">How to view scanned Bluetooth Devices</font>](#3)**
+- **[<font size = "4">How to connect the scanned Bluetooth Device</font>](#4)**
+- **[<font size = "4">View historical data of Bluetooth Devices</font>](#5)**
+- **[<font size = "4">Simulation demo</font>](#6)**
 
-## How to add a Gateway
+## <a id="1">How to add a Gateway</a>
 
 ### Configuring Gateway connect to network,eg:
 
@@ -75,7 +75,7 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ![addManually](img-folder/add_manually.png)
 	
-## Gateway information
+## <a id="2">Gateway information
 
 ### Gateway list
 
@@ -129,4 +129,4 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ![GatewaySettingsOTA](img-folder/gateway_settings_ota.png)
 
-## How to view scanned Bluetooth Devices
+## <a id="3">How to view scanned Bluetooth Devices
