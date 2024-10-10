@@ -6,31 +6,31 @@
 
 ### Supported product models：
 
-***Remote Gateway***
+***[Remote Gateway](#0)***
 
 <font size = "4">`MKGW-mini 01` `MK107` `MK107D Pro` `MK107D Pro-35D` `MK110 Plus 01`</font>
 
-***Remote Gateway with metering***
+***[Remote Gateway with metering](#0)***
 
 <font size = "4">`MK110 Plus 02` `MK110 Plus 03`</font>
 
-***POE Gateway***
+***[POE Gateway](#0)***
 
 <font size = "4">`MKGW3`</font>
 
-***Cellular Gateway***
+***[Cellular Gateway](#0)***
 
 <font size = "4">`MKGW4`</font>
 
-***USB Gateway***
+***[USB Gateway](#0)***
 
 <font size = "4">`MKGW7`</font>
 
-***Other Gateway***
+***[Other Gateway](#0)***
 
 <font size = "4">`MKGW1`</font>
 
-***LoRa Device***
+***[LoRa Device](#0)***
 
 <font size = "4">`LW003-B` `LW001-BG PRO(L)` `LW001-BG PRO(M)` `LW004-PB` `LW004-CT` `LW005-MP` `LW007-PIR` `LW008-MT`</font>
 
@@ -38,7 +38,7 @@
 
 -------------------
 
-### Guide
+### <a id="0">Guide</a>
 
 - **[<font size = "4">How to add a Gateway</font>](#1)**
 - **[<font size = "4">Gateway information</font>](#2)**
@@ -46,7 +46,9 @@
 - **[<font size = "4">How to connect the scanned Bluetooth Device</font>](#4)**
 - **[<font size = "4">Simulation demo</font>](#5)**
 - **[<font size = "4">Batch Operations</font>](#6)**
-- **[<font size = "4">File Version</font>](#7)**
+- **[<font size = "4">Cellular Gateway</font>](#7)**
+- **[<font size = "4">LoRa Gateway</font>](#8)**
+- **[<font size = "4">Version</font>](#100)**
 
 ## <a id="1">How to add a Gateway</a>
 
@@ -208,11 +210,26 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 ![BatchUpgrade4](img-folder/batch_upgrade_4.png)
 
-## <a id="7">File Version</a>
+
+## <a id="7">Cellular Gateway</a>
+
+> The cellular gateway supports scanning, reporting of positioning information, alarm, and sending of configuration parameters. Since the gateway is not continuously online, the sent parameters will be stored in the queue and will be sent after the device is online.
+
+![CellularGateway](img-folder/cellular_gateway_list.png)
+![CellularGateway](img-folder/cellular_position_data.png)
+
+> The read and configured commands are stored in the downlink message queue, and the execution status of the message can be viewed.this can be done under: “Cellular Gateway -> Down Link Message”.
+
+![CellularGateway](img-folder/cellular_gateway_config.png)
+![CellularGateway](img-folder/cellular_gateway_downlink_queue.png)
+
+## <a id="8">LoRa Gateway</a>
+
+## <a id="100">Version</a>
 
 | Version | Revision History | Editor | Date |
 | --- | --- | --- | --- |
-| V1.0.0 | Create, Official Version | Wenzheng Liu | 2023/05/17 |
-| V1.0.1 | Modify, Add Multi-Gateway Compatibility | Wenzheng Liu | 2023/09/25 |
-| V1.0.2 | Modify, Add Batch Upgrade | Wenzheng Liu | 2023/11/01 |
-| V1.0.3 | Modify, Add Cellular,LoRa Gateway | Wenzheng Liu | 2024/10/10 |
+| V1.0.0 | Create, Official Version | Tony Liu | 2023/05/17 |
+| V1.0.1 | Modify, Add Multi-Gateway Compatibility | Tony Liu | 2023/09/25 |
+| V1.0.2 | Modify, Add Batch Upgrade | Tony Liu | 2023/11/01 |
+| V1.0.3 | Modify, Add Cellular,LoRa Gateway | Tony Liu | 2024/10/10 |
