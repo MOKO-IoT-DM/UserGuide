@@ -268,7 +268,7 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 | Version | Revision History | Editor | Date |
 | --- | --- | --- | --- |
-| V1.0.0 | Create, Official Version | Tony Liu | 2023/05/17 |
-| V1.0.1 | Modify, Add Multi-Gateway Compatibility | Tony Liu | 2023/09/25 |
-| V1.0.2 | Modify, Add Batch Upgrade | Tony Liu | 2023/11/01 |
-| V1.0.3 | Modify, Add Cellular Gateway,LoRa Device | Tony Liu | 2024/10/10 |
+| V1.0.0 | Create, Official Version | wenzheng Liu | 2023/05/17 |
+| V1.0.1 | Modify, Add Multi-Gateway Compatibility | wenzheng Liu | 2023/09/25 |
+| V1.0.2 | Modify, Add Batch Upgrade | wenzheng Liu | 2023/11/01 |
+| V1.0.3 | Modify, Add Cellular Gateway,LoRa Device | wenzheng Liu | 2024/10/10 |
