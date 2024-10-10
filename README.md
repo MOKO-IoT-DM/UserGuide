@@ -44,8 +44,9 @@
 - **[<font size = "4">Gateway information</font>](#2)**
 - **[<font size = "4">How to view scanned Bluetooth Devices</font>](#3)**
 - **[<font size = "4">How to connect the scanned Bluetooth Device</font>](#4)**
-- **[<font size = "4">View historical data of Bluetooth Devices</font>](#5)**
-- **[<font size = "4">Simulation demo</font>](#6)**
+- **[<font size = "4">Simulation demo</font>](#5)**
+- **[<font size = "4">Batch Operations</font>](#6)**
+- **[<font size = "4">File Version</font>](#7)**
 
 ## <a id="1">How to add a Gateway</a>
 
@@ -75,7 +76,7 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ![addManually](img-folder/add_manually.png)
 	
-## <a id="2">Gateway information
+## <a id="2">Gateway information</a>
 
 ### Gateway list
 
@@ -101,27 +102,23 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ![GatewayDetail](img-folder/gateway_detail.png)
 
-#### Set Up WiFi
+#### WiFi Settings
 
 > Some gateways only support WiFi for network access. After modifying WiFi parameters, the gateway needs to be restarted for the changes to take effect.
 
 ![GatewaySettingsWifi](img-folder/gateway_settings_wifi.png)
 
-#### Set Up MQTT
+#### MQTT Settings
 
 > Changing the MQTT server or parameters that the gateway connects to requires a restart of the gateway for the changes to take effect.
 
 ![GatewaySettingsMQTT](img-folder/gateway_settings_mqtt.png)
 
-#### Network Setting
+#### Network Settings
 
 > Some gateways that support both Ethernet and WiFi can choose to switch between network access methods. Changes will take effect after the gateway is restarted. 
 
 ![GatewaySettingsNetwork](img-folder/gateway_settings_network.png)
-
-#### Function Configuration
-
-> This includes configuring parameters such as scan switch, indicator light switch, and heartbeat packet interval. Changes take effect immediately after configuration.
 
 #### OTA
 
@@ -129,4 +126,93 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ![GatewaySettingsOTA](img-folder/gateway_settings_ota.png)
 
-## <a id="3">How to view scanned Bluetooth Devices
+#### Function Configuration
+
+> This includes configuring parameters such as scan switch, indicator light switch, and heartbeat packet interval. Changes take effect immediately after configuration.Different gateway configuration items are slightly different
+
+## <a id="3">How to view scanned Bluetooth Devices</a>
+
+### Add Device
+
+***Use Excel to add batches***
+
+![GatewayAddBatch](img-folder/device_add_batch.png)
+![GatewayAddBatch2](img-folder/device_add_batch2.png)
+
+***Manually add***
+
+![GatewayAddManual](img-folder/device_add_manual.png)
+
+
+### Device List
+
+> After successfully adding a device, the list will display all current devices. If the device is scanned by a previously added gateway, refreshing the page will update the device's RSSI value and the last time it was scanned.
+
+![DeviceList](img-folder/device_list.png)
+
+> You can also view device details, access historical data, and perform deletion operations.
+
+![DeviceHistory](img-folder/device_history.png)
+
+## <a id="4">How to connect the scanned Bluetooth Device</a>
+
+
+> If the current gateway supports connecting to the device, a "Connect" button will be displayed. The default connection password is Moko4321. After connecting, different operation pages will be displayed based on the device model.
+Below are the details page and operation page after connecting to H4 Pro. It supports remote shutdown and reading local storage data.
+
+![DeviceDetail](img-folder/device_detail.png)
+![DeviceTHData](img-folder/device_th_data.png)
+
+> Here are the details page and operation page after connecting to B2. It supports remote alarm deactivation, control of LED flashing and buzzer, as well as remote OTA.
+
+![DeviceDetailB2](img-folder/device_detail_b2.png)
+![DeviceB2Data](img-folder/device_b2_data.png)
+![DeviceB2Data2](img-folder/device_b2_data_2.png)
+
+> Note: A gateway can only connect to one device at a time. If you wish to connect to another device, please disconnect the current connection first.
+
+## <a id="5">Simulation demo</a>
+
+### Indoor Location Simulation
+
+> Deploy up to four gateways at least 5 meters apart to simulate different areas. Equip personnel or assets with button alarm devices to move between these areas. You will be able to observe corresponding changes in the simulated areas on the graphical representation as the devices move.
+
+> By pressing the button on the device, the corresponding area will turn red. Simultaneously, a "Dismiss Alarm Status" button will appear. Clicking this button will automatically connect to the device to deactivate the alarm. Once deactivated, the device will disconnect, canceling the alarm, and the area will return to its original green state.  
+
+![DemoIndoor](img-folder/demo_indoor.png)
+
+### Sensor Device Demo
+
+> If you have sensor devices added to the platform, you can use this feature to simultaneously view the sensor statuses of all devices. After selecting a device, they will be arranged in a grid below. For H4 Pro and ToF devices, you need to set thresholds in the "Setting" section. When these thresholds are exceeded, the device's status color will change, allowing you to simulate various alarm scenarios. 
+
+![DemoSensor1](img-folder/demo_sensor_1.png)
+![DemoSensor2](img-folder/demo_sensor_2.png)
+
+## <a id="6">Batch Operations</a>
+
+### Batch Device Upgrade
+
+> If there is a batch of devices that require a firmware update, you can utilize the platform's batch upgrade feature. Firstly, you need to select gateways capable of connecting to the target devices. The platform supports a maximum of 10 gateways for this purpose. 
+
+![BatchUpgrade1](img-folder/batch_upgrade_1.png)
+
+> Please provide the firmware address required for the upgrade. The devices undergoing the upgrade must be of the same model.
+
+![BatchUpgrade2](img-folder/batch_upgrade_2.png)
+
+> Import the Excel file containing the devices that require an upgrade.
+
+![BatchUpgrade3](img-folder/batch_upgrade_3.png)
+
+> Click on "Batch Start" to initiate the upgrade process. During the upgrade, the progress bar for each device will be displayed. In case of an upgrade failure, you can click "Retry" to attempt the upgrade again. Please note that one gateway can only upgrade one device at a time. After completing the upgrade for one device, the process will continue with the next device.
+
+![BatchUpgrade4](img-folder/batch_upgrade_4.png)
+
+## <a id="7">File Version</a>
+
+| Version | Revision History | Editor | Date |
+| --- | --- | --- | --- |
+| V1.0.0 | Create, Official Version | Wenzheng Liu | 2023/05/17 |
+| V1.0.1 | Modify, Add Multi-Gateway Compatibility | Wenzheng Liu | 2023/09/25 |
+| V1.0.2 | Modify, Add Batch Upgrade | Wenzheng Liu | 2023/11/01 |
+| V1.0.3 | Modify, Add Cellular,LoRa Gateway | Wenzheng Liu | 2024/10/10 |
