@@ -47,7 +47,7 @@
 - **[<font size = "4">Simulation demo</font>](#5)**
 - **[<font size = "4">Batch Operations</font>](#6)**
 - **[<font size = "4">Cellular Gateway</font>](#7)**
-- **[<font size = "4">LoRa Gateway</font>](#8)**
+- **[<font size = "4">LoRa Device</font>](#8)**
 - **[<font size = "4">Version</font>](#100)**
 
 ## <a id="1">How to add a Gateway</a>
@@ -57,6 +57,10 @@
 ***MKGW3(PoE)***
 	
 ![MKGW3](img-folder/network_settings.png)
+
+***MKGW4(Cellular)***
+	
+![MKGW3](img-folder/network_settings_cellular.png)
 	
 ***MKGW2(LoRa)***
 	
@@ -223,8 +227,43 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 ![CellularGateway](img-folder/cellular_gateway_config.png)
 ![CellularGateway](img-folder/cellular_gateway_downlink_queue.png)
 
-## <a id="8">LoRa Gateway</a>
+## <a id="8">LoRa Device</a>
 
+### Config device connect LoRaWAN
+
+> First, you need to register the LoRa device to Chirpstack and use the APP to configure the device to access the network.
+
+***Chirpstack***
+
+![LoRa](img-folder/lora_add_1.png)
+
+***MKLoRa***
+
+![LoRa](img-folder/lora_add_2.png)
+
+### Add LoRa Device
+
+> After successfully registering on Chirpstack, you can get the Application Id and the device's DevEUI, generate a Topic for the device, and then create the device on the Cloud.
+
+![LoRa](img-folder/lora_add_3.png)
+![LoRa](img-folder/lora_list.png)
+
+### Device info & Downlink message
+
+> On the device details page, you can send commands to the device. The message will be stored in the queue. When the device reports, you will receive the device's response data.
+
+![LoRa](img-folder/lora_detail.png)
+
+### History
+
+> The data reported by the device will be divided by port. You can view the original data and the decoded data
+
+![LoRa](img-folder/lora_history.png)
+![LoRa](img-folder/lora_decoded.png)
+
+> When the device has a positioning function, after filtering the successfully located ports, you can view the path display of the device on the map.
+
+![LoRa](img-folder/lora_path_display.png)
 ## <a id="100">Version</a>
 
 | Version | Revision History | Editor | Date |
@@ -232,4 +271,4 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 | V1.0.0 | Create, Official Version | Tony Liu | 2023/05/17 |
 | V1.0.1 | Modify, Add Multi-Gateway Compatibility | Tony Liu | 2023/09/25 |
 | V1.0.2 | Modify, Add Batch Upgrade | Tony Liu | 2023/11/01 |
-| V1.0.3 | Modify, Add Cellular,LoRa Gateway | Tony Liu | 2024/10/10 |
+| V1.0.3 | Modify, Add Cellular Gateway,LoRa Device | Tony Liu | 2024/10/10 |
