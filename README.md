@@ -1,24 +1,26 @@
-# MOKOCloud User Guide
+# MOKO IoT DM User Guide
 
-<font size = "3">Before login MOKOCloud, please use the APP to config the Gateway connect the network. For Remote Gateway or Others, you can use any MQTT broker. For LoRa Gateways, please use Chirpstack and configure the LoRa Device to the appropriate frequency band through the APP.</font>
+<font size = "3">Before login MOKO IoT DM, please use the APP to config the Gateway connect the network. For Remote Gateway or Others, you can use any MQTT broker. For LoRa Gateways, please use Chirpstack and configure the LoRa Device to the appropriate frequency band through the APP.</font>
 
 -------------------
 
 ### Supported product models：
 
+**<font size = "4">Bluetooth Gateway:</font>**
+
 ***[Remote Gateway](#0)***
 
-<font size = "4">`MKGW-mini 01` `MK107` `MK107D Pro` `MK107D Pro-35D` `MK110 Plus 01`</font>
+<font size = "4">`MKGW-mini 01` `MK107` `MK107D Pro-35D` `MK110 Plus 01`</font>
 
 ***[Remote Gateway with metering](#0)***
 
 <font size = "4">`MK110 Plus 02` `MK110 Plus 03`</font>
 
-***[POE Gateway](#0)***
+***[Indoor POE Gateway](#0)***
 
 <font size = "4">`MKGW3`</font>
 
-***[Cellular Gateway](#0)***
+***[Bluetooth to Cellular](#0)***
 
 <font size = "4">`MKGW4`</font>
 
@@ -26,13 +28,19 @@
 
 <font size = "4">`MKGW7`</font>
 
+***[Bluetooth to LoRaWAN](#0)***
+
+<font size = "4">`LW003-B`</font>
+
 ***[Other Gateway](#0)***
 
-<font size = "4">`MKGW1`</font>
+<font size = "4">`MKGW1` `MKGW2`</font>
 
-***[LoRa Device](#0)***
+**<font size = "4">LoRa Device:</font>**
 
-<font size = "4">`LW003-B` `LW001-BG PRO(L)` `LW001-BG PRO(M)` `LW004-PB` `LW004-CT` `LW005-MP` `LW007-PIR` `LW008-MT`</font>
+***[LoRa Node](#8)***
+
+<font size = "4"> `LW001-BG PRO(L)` `LW001-BG PRO(M)` `LW004-PB` `LW004-CT` `LW005-MP` `LW006-SB` `LW007-PIR` `LW008-MT`</font>
 
 > MKGW1、MKGW2 user Web to configure parameters,LoRa Device use APP `MKLoRa` ,Other gateway use APP `MKScannerPro`
 
@@ -47,7 +55,7 @@
 - **[<font size = "4">Simulation demo</font>](#5)**
 - **[<font size = "4">Batch Operations</font>](#6)**
 - **[<font size = "4">Cellular Gateway</font>](#7)**
-- **[<font size = "4">LoRa Device</font>](#8)**
+- **[<font size = "4">LoRa Node</font>](#8)**
 - **[<font size = "4">Version</font>](#100)**
 
 ## <a id="1">How to add a Gateway</a>
@@ -94,7 +102,7 @@ Confirm your account is online.If your account shows as “Disconnected” after
 
 ### Configure Scanner filter, and Payload Parameters
 
-> MOKOCloud can help you setting the gateway's scanning filter conditions. It supports filtering by RSSI, MAC address, Name, Raw Data, and Duplicate Data. 
+> IoT DM can help you setting the gateway's scanning filter conditions. It supports filtering by RSSI, MAC address, Name, Raw Data, and Duplicate Data. 
 
 > You can also configure the payload parameters of the uplink scanning data. This can be done under: “Gateway Management -> Scanner & Upload Option”.
 
@@ -227,11 +235,11 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 ![CellularGateway](img-folder/cellular_gateway_config.png)
 ![CellularGateway](img-folder/cellular_gateway_downlink_queue.png)
 
-## <a id="8">LoRa Device</a>
+## <a id="8">LoRa Node</a>
 
 ### Config device connect LoRaWAN
 
-> First, you need to register the LoRa device to Chirpstack and use the APP to configure the device to access the network.
+> First, you need to register the LoRa device to Chirpstack and use the APP to configure the device to access the network.Currently supported regions:AS923、AU915_0、AU915_1、EU868、US915_0、US915_1
 
 ***Chirpstack***
 
@@ -243,7 +251,7 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 ### Add LoRa Device
 
-> After successfully registering on Chirpstack, you can get the Application Id and the device's DevEUI, generate a Topic for the device, and then create the device on the Cloud.
+> After successfully registering on Chirpstack, you can get the Application Id and the device's DevEUI, generate a Topic for the device, and then create the device on the IoT DM.
 
 ![LoRa](img-folder/lora_add_3.png)
 ![LoRa](img-folder/lora_list.png)
