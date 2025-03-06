@@ -225,6 +225,7 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 ## <a id="7">Cellular Gateway</a>
 
+
 > The cellular gateway supports scanning, reporting of positioning information, alarm, and sending of configuration parameters. Since the gateway is not continuously online, the sent parameters will be stored in the queue and will be sent after the device is online.
 
 ![CellularGateway](img-folder/cellular_gateway_list.png)
@@ -234,6 +235,22 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 ![CellularGateway](img-folder/cellular_gateway_config.png)
 ![CellularGateway](img-folder/cellular_gateway_downlink_queue.png)
+
+### Add Cellular Gateway
+
+***Use APP to add***
+
+> You can use the MKScannerPro APP to register your gateway to IoT DM,but first you need to create an account in IoT DM.
+> When both Networt and MQTT are connected, devices can be synchronized to the IoT DM
+
+![CellularGateway](img-folder/cellular_gateway_add_1.png)
+![CellularGateway](img-folder/cellular_gateway_add_2.png)
+
+***Manually add***
+
+> Cellular Gateway -> Create Gateway
+
+![CellularGateway](img-folder/cellular_gateway_add_3.png)
 
 ## <a id="8">LoRa Node</a>
 
@@ -247,9 +264,19 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 
 ***MKLoRa***
 
-![LoRa](img-folder/lora_add_2.png)
+![LoRa](img-folder/lora_add_4.png)
 
 ### Add LoRa Device
+
+***Use APP to add***
+
+>You can use the MKLoRa APP to register your device to moko's chirpstack and IoT DM,but first you need to create an account in IoT DM.
+>
+>Select MOKO IoT DM on the LoRa Connection Settings page and fill in the LoRa gateway ID(only need to add once).
+
+![LoRa](img-folder/lora_add_5.png)
+
+***Manually add***
 
 > After successfully registering on Chirpstack, you can get the Application Id and the device's DevEUI, generate a Topic for the device, and then create the device on the IoT DM.
 
@@ -280,3 +307,4 @@ Below are the details page and operation page after connecting to H4 Pro. It sup
 | V1.0.1 | Modify, Add Multi-Gateway Compatibility | wenzheng Liu | 2023/09/25 |
 | V1.0.2 | Modify, Add Batch Upgrade | wenzheng Liu | 2023/11/01 |
 | V1.0.3 | Modify, Add Cellular Gateway,LoRa Device | wenzheng Liu | 2024/10/10 |
+| V1.0.4 | Modify, Add sync device by app | wenzheng Liu | 2025/03/06 |
